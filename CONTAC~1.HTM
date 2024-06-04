@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul li a:hover {
+            color: #007bff;
+        }
+        
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #007bff;
+        }
+        
+        ul {
+            padding: 0;
+        }
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+        .homeimagen{
+        width: 1200px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 150px;
+    }
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .social-icons {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .social-icons a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 50%;
+        line-height: 40px;
+        margin: 0 10px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .social-icons a:hover {
+        background-color: #555;
+    }
+    .categories-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* Estilos para el menú desplegable */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .categories-btn {
+        background-color: #3e8e41;
+      }
+      body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+}
+
+.fijo {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Estilo para el espacio reservado en la parte superior para el menú fijo */
+body::before {
+  content: "";
+  display: block;
+  height: 70px; /* Ajusta esta altura según la altura del menú */
+  width: 100%;
+}
+
+/* Estilo para el contenido principal para evitar que se superponga con el menú */
+main {
+  margin-top: 70px; /* Ajusta esto según la altura del menú */
+}
+
+        
+    </style>
+    <title>CONTACTANOS</title>
+</head>
+<body>
+    <header>
+        <div class="fijo">
+       
+          <nav>
+            <ul>
+              <li><a href="Home.html">Inicio</a></li>
+              <li><a href="quienes_somos.html">quienes somos </a></li>
+              <li><a href="contactanos.html">contactanos</a></li>
+              <li><a href="catalogo.html">Catalogo</a></li>
+              <li><a href="carrito.html">carrito</a></li>
+              <li><a href="inicio_de_secion.html">Registrate</a></li>
+    
+    
+              <div class="dropdown">
+                <button class="categories-btn">Categorías</button>
+                <div class="dropdown-content">
+                  <a href="catalogo.html"><img src="imagenes/icono_de_todos_mascotas.png" alt="" width="30px">todo para tus mascotas</a>
+                  <a href="categoria_gatos.html"><img src="imagenes/gato_icono_categorias.png" alt=""  width="30px">para gatos</a>
+                  <a href="categoria_perros.html"> <img src="imagenes/perrito_icono_categorias.png" alt=""   width="30px" >para perros </a>
+                </div> 
+               
+              </div>
+                </ul>
+            </ul>
+          </nav>
+        </div>
+      </header>
+ 
+    <div class="container">
+        <h1>Contacto</h1>
+        <form action="mailto:candi.morenocetis138@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tutienda" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/tutienda" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/tutienda" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</body>
+</html>

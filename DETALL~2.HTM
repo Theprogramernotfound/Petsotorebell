@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto en Rebaja</title>
+  <style>
+    /* Estilos opcionales para la página de producto */
+    .producto {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .producto .descripcion {
+      margin-bottom: 20px;
+    }
+
+    .producto .precio {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .producto .descuento {
+      color: red;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+    }
+    
+    header {
+        background-color: #343a40;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    nav {
+        background-color: #343a40;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav ul li a:hover {
+        color: #007bff;
+    }
+    
+    section {
+        padding: 20px;
+        text-align: center;
+        background-color: #fff;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        color: #007bff;
+    }
+    
+    ul {
+        padding: 0;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    #productos_sugeridos {
+            display: flex;
+            justify-content: space-around;
+        }
+        .producto {
+            text-decoration: none;
+            color: black;
+            transition: transform 0.3s ease;
+        }
+        .producto:hover {
+            transform: scale(1.1);
+        }
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Estilo para el espacio reservado en la parte superior para el menú fijo */
+body::before {
+  content: "";
+  display: block;
+  height: 70px; /* Ajusta esta altura según la altura del menú */
+  width: 100%;
+}
+
+/* Estilo para el contenido principal para evitar que se superponga con el menú */
+main {
+  margin-top: 70px; /* Ajusta esto según la altura del menú */
+}
+
+  </style>
+</head>
+<body>
+     
+  <header>
+    <div class="container">
+   
+      <nav>
+        <ul>
+          <li><a href="Home.html">Inicio</a></li>
+          <li><a href="quienes_somos.html">quienes somos </a></li>
+          <li><a href="contactanos.html">contactanos</a></li>
+          <li><a href="catalogo.html">Catalogo</a></li>
+          <li><a href="carrito.html">carrito</a></li>
+          <li><a href="inicio_de_secion.html">Registrate</a></li>
+
+
+          <div class="dropdown">
+            <button class="categories-btn">Categorías</button>
+            <div class="dropdown-content">
+              <a href="catalogo.html"><img src="imagenes/icono_de_todos_mascotas.png" alt="" width="30px">todo para tus mascotas</a>
+              <a href="categoria_gatos.html"><img src="imagenes/gato_icono_categorias.png" alt=""  width="30px">para gatos</a>
+              <a href="categoria_perros.html"> <img src="imagenes/perrito_icono_categorias.png" alt=""   width="30px" >para perros </a>
+            </div> 
+           
+          </div>
+            </ul>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<div class="producto">
+  <img src="imagenes/promocion_2 .png" alt="Producto en Rebaja">
+  <div class="descripcion">
+    <h2>mochila para transportar tu mascota</h2>
+    <p>mochila amplia con agujeros para respirar ideal para gatos y perros.</p>
+  </div>
+  <div class="precio">
+    Precio Normal: $500.00
+  </div>
+  <div class="descuento">
+    Precio en Rebaja: $200.00 (40% de descuento)
+  </div>
+  <p>¡Aprovecha esta oferta por tiempo limitado!</p>
+  <button onclick="agregarAlCarrito('Nombre del Producto', 80.00)">Agregar al carrito</button>
+</div>
+<h2>Productos Sugeridos</h2>
+      <div id="productos_sugeridos">
+          <a class="producto" href="detalles_0.html"> <img width="150px" src="imagenes/promocion_1 .png"alt=""><a>
+          <a class="producto" href="detalles_1.html"><img width="50px" src="imagenes/promocion_4 .png"alt=""><a>
+          <a class="producto" href="detalles_5.html"><img src="imagenes/promocion_5.png" alt=""></a>
+      </div>
+  
+<script>
+  function agregarAlCarrito(nombreProducto, precio) {
+    // Aquí puedes agregar lógica para agregar el producto al carrito de compras
+    alert(nombreProducto + " agregado al carrito por $" + precio);
+  }
+</script>
+
+</body>
+</html>

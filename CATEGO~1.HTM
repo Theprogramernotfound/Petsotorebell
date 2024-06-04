@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perros</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+    }
+    .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+    
+    header {
+        background-color: #343a40;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    nav {
+        background-color: #343a40;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav ul li a:hover {
+        color: #007bff;
+    }
+    
+    section {
+        padding: 20px;
+        text-align: center;
+        background-color: #fff;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        color: #007bff;
+    }
+    
+    ul {
+        padding: 0;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    .homeimagen{
+    width: 1200px;
+    
+    }
+    .producto {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        
+      }
+  
+      .producto img {
+        width: 250px ;
+        height: auto;
+      }
+  
+      .producto .descripcion {
+        padding: 15px;
+      }
+  
+      .producto .descripcion h2 {
+        margin-top: 0;
+      }
+  
+      .producto .descripcion p {
+        margin-bottom: 10px;
+      }
+  
+      .boton-agregar {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      .boton-agregar:hover {
+        background-color: #45a049;
+      }
+      .categories-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* Estilos para el menú desplegable */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .categories-btn {
+        background-color: #3e8e41;
+      }
+      .categories-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* Estilos para el menú desplegable */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .categories-btn {
+        background-color: #3e8e41;
+      }
+      body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Estilo para el espacio reservado en la parte superior para el menú fijo */
+body::before {
+  content: "";
+  display: block;
+  height: 70px; /* Ajusta esta altura según la altura del menú */
+  width: 100%;
+}
+
+/* Estilo para el contenido principal para evitar que se superponga con el menú */
+main {
+  margin-top: 70px; /* Ajusta esto según la altura del menú */
+}
+      
+      
+      
+      
+      </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+   
+      <nav>
+        <ul>
+          <li><a href="Home.html">Inicio</a></li>
+          <li><a href="quienes_somos.html">quienes somos </a></li>
+          <li><a href="contactanos.html">contactanos</a></li>
+          <li><a href="catalogo.html">Catalogo</a></li>
+          <li><a href="carrito.html">carrito</a></li>
+          <li><a href="inicio_de_secion.html">Registrate</a></li>
+
+
+          <div class="dropdown">
+            <button class="categories-btn">Categorías</button>
+            <div class="dropdown-content">
+              <a href="catalogo.html"><img src="imagenes/icono_de_todos_mascotas.png" alt="" width="30px">todo para tus mascotas</a>
+              <a href="categoria_gatos.html"><img src="imagenes/gato_icono_categorias.png" alt=""  width="30px">para gatos</a>
+              <a href="categoria_perros.html"> <img src="imagenes/perrito_icono_categorias.png" alt=""   width="30px" >para perros </a>
+            </div> 
+           
+          </div>
+            </ul>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <center>
+        <div class="catalogo">
+            <div class="producto">
+              <img  src="imagenes/casa bonita para perro.jpg" alt="Producto 1">
+              <div class="descripcion">
+                <h2>casa para perro bonita </h2>
+                <p>casa para perro muy bonita</p>
+                <p>Precio:  $1600</p>
+                <button class="boton-agregar" onclick="agregarAlCarrito('Producto 1', 50.00)">Agregar al carrito</button>
+                
+              </div>
+            </div>
+          
+          
+            <div class="producto">
+              <img src="imagenes/escalera para perros_plegable.jpg" alt="Producto 2">
+              <div class="descripcion">
+                <h2>escalera para perros </h2>
+                <p>escalera plegable para perros amplia.</p>
+                <p>Precio: $350.00</p>
+                <button class="boton-agregar" onclick="agregarAlCarrito('Producto 2', 60.00)">Agregar al carrito</button>
+               
+              </div>
+            </div>
+          
+            <div class="producto">
+              <img src="imagenes/pasto sintetico para perro.jpg" alt="Producto 3">
+              <div class="descripcion">
+                <h2> tapete de pasto para perro amplia</h2>
+                <p>tapete amplio para perros</p>
+                <p>Precio: $150.00</p>
+                <button class="boton-agregar" onclick="agregarAlCarrito('Producto 3', 70.00)">Agregar al carrito</button>
+                
+              </div>
+            </div>
+          
+            <div class="producto">
+              <img src="imagenes/pelota de juguete para perros.jpg" alt="Producto 4">
+              <div class="descripcion">
+                <h2>pelota para perros</h2>
+                <p>pelota para perros muy bonita.</p>
+                <p>Precio: $80.00</p>
+                <button class="boton-agregar" onclick="agregarAlCarrito('Producto 4', 80.00)">Agregar al carrito</button>
+               
+              </div>
+            </div>
+          
+            <div class="producto">
+              <img src="imagenes/repelente para ir al baño para perros.jpg" alt="Producto 5">
+              <div class="descripcion">
+                <h2>repelente para ir al baño para perros</h2>
+                <p>repelente para perros para ir al baño 750ml .</p>
+                <p>Precio: $95.00</p>
+                <button class="boton-agregar" onclick="agregarAlCarrito('Producto 5', 90.00)">Agregar al carrito</button>
+              
+              </div>
+            </div>
+          </div>
+        </center>
+          
+          <script>
+            function agregarAlCarrito(nombreProducto, precio) {
+              // Aquí puedes agregar lógica para agregar el producto al carrito de compras
+              alert(nombreProducto + " agregado al carrito por $" + precio);
+            }
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <p>&copy; 2024 pet store bell. Todos los derechos reservados.</p>
+      </div>
+</body>
+</html>
